@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ciudades Globales</title>
+	<link rel="stylesheet" href="CSS/normalize.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="CSS/Estilos.css">
+	<script src="https://kit.fontawesome.com/dfd0b07253.js" crossorigin="anonymous"></script>
+	
+</head>
+<body>
+	<main>
+		<form action="" class="formulario" id="formulario">
+			<!--Grupo Usuario-->
+			<div class ="formulario__grupo" id="grupo__usuario">
+				<label for="usuario" class="formulario__label">Usuario</label>
+				<div class= "formulario__grupo_input">
+					<input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Usuario">
+					<i class="formulario__validacion-estado fa-solid fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error-activo">El usuario tiene que tener mas de 4 digitos, debe tener letras y numeros.</p>
+			</div>
+
+			<!--Grupo Nombre-->
+			<div class ="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label">Nombre</label>
+				<div class= "formulario__grupo_input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre">
+					<i class="formulario__validacion-estado fa-solid fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error-activo">El nombre solo debe contener letras.</p>
+			</div>
+
+			<!--Grupo Curso-->
+			<div class ="formulario__grupo" id="grupo__curso">
+				<label for="curso" class="formulario__label">Curso</label>
+				<div class= "formulario__grupo_input">
+					<input type="text" class="formulario__input" name="curso" id="curso" placeholder="Curso">
+					<i class="formulario__validacion-estado fa-solid fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error-activo">Solo debe especificarse si eres de 1ro 2do 3ro 4to 5to 6to.</p>
+			</div>
+
+			<!--Grupo Correo Electronico-->
+			<div class ="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label">Correo Electronico</label>
+				<div class= "formulario__grupo_input">
+					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="Correo@correo.com">
+					<i class="formulario__validacion-estado fa-solid fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error-activo">El correo solo debe tener letras, numeros, puntos, guiones y guion bajo.</p>
+			</div>
+
+			<!--Grupo Terminos y Condiciones-->
+			<div class="formulario__grupo" id="formulario__grupo-terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones (el registro de estos datos).
+				</label>
+			</div>
+			
+			<!--Mensaje error
+			<div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Por favor rellena el formulario de manera correcta. </p>
+			</div>-->
+			
+			<!--Enviar formulario-->
+			<a href="Html/index2.html">
+			<div class="formulario__grupo" id="formulario__grupo-btn-enviar">
+				<input class="formulario__btn" type="button" value="Seguir con la pagina">	
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Tus datos han sido registrados.</p>
+			</div>
+			</a>
+		</form>
+	</main>
+	<script src="js/ciudades-globales.js"></script>
+	
+</body>
+</html>
